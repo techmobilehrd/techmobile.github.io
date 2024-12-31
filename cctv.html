@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCTV Services</title>
+  <link rel="stylesheet" href="assest/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #ff5722;
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1s ease-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5em;
+      color: #ff5722;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    .service-card {
+      background-color: white;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      margin: 10px 0;
+      padding: 30px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card h3 {
+      color: #333;
+      font-weight: bold;
+    }
+
+    .service-card p {
+      color: #555;
+      font-size: 1.1em;
+    }
+
+    .key-services {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .key-services .service {
+      background-color: #ff5722;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .key-services .service:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .key-services .service i {
+      font-size: 3em;
+      margin-bottom: 15px;
+      transition: color 0.3s ease;
+    }
+
+    .key-services .service:hover i {
+      color: #ffdf00;
+    }
+
+    .key-services .service h3 {
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .key-services .service p {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div id="header"></div>
+	<script>
+	  fetch('header.html')
+		.then(response => response.text())
+		.then(data => {
+		  document.getElementById('header').innerHTML = data;
+		});
+	</script>
+ 
+
+  <header>
+    <h1>CCTV Services</h1>
+    <p>Protect Your Property with Our Reliable CCTV Solutions</p>
+  </header>
+
+ 
+      
+      <!-- Key Services Section -->
+      <h2 class="section-title">Key CCTV Services</h2>
+      <div class="key-services">
+        <div class="service">
+          <i class="fas fa-video"></i>
+          <h3>CCTV Installation</h3>
+          <p>We install high-quality CCTV systems tailored to your security needs, ensuring complete coverage and peace of mind.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-cogs"></i>
+          <h3>System Configuration</h3>
+          <p>We configure and optimize CCTV systems to provide clear and efficient surveillance, with remote access options for your convenience.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-tools"></i>
+          <h3>Maintenance & Support</h3>
+          <p>Our ongoing maintenance and support services keep your CCTV system in top condition, ensuring continuous protection.</p>
+        </div>
+      </div>
+
+      <div class="key-services">
+        <div class="service">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Remote Monitoring</h3>
+          <p>Monitor your property remotely with mobile and desktop applications, ensuring you always have access to live video feeds.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud-Based Video Storage</h3>
+          <p>Store your surveillance footage securely in the cloud, giving you easy access to recordings from anywhere at any time.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-arrow-up"></i>
+          <h3>System Upgrades</h3>
+          <p>Upgrade your existing CCTV system with advanced features like HD cameras, motion detection, and AI integration for enhanced security.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+ 
+
+</body>
+</html>
